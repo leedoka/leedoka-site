@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <img src="img/logo-new.png" alt="Checkroom" width="120" height="90.57" />
+            <img src="img/carmina.png" alt="Carmina" id="carmina" width="176" height="59" />
+            <h1>Новая коллекция</h1>
+            <button class="detail">Подробнее</button>
+        </header>
+        <main>
+            <div class="content">
+                <p>
+                    Museum calf &mdash; специально обработанная кожа, которую легко
+                    определить по интересному &#171пятнистому&#187 окрасу и &#171врождённой&#187
+                    патине. Такой окрас делается не на обувной фабрике,
+                    а непосредственно на дубильне в процессе обработки шкуры.
+                <br>
+                <br>
+                    В магазине Checkroom есть несколько моделей, выполненных в такой
+                    коже. Среди них челси Carmina 80216 на резиновой подошве Dainite
+                    на колодке Rain в максимально широкой полноте ЕЕЕ.
+                </p>
+            </div>
+            <h2>Мужские монки</h2>
+            <section class="monks">
+                <div class="yanko">
+                    <img src="img/image-20.png" alt="Монки Yanko" width="246" height="180" />
+                    <h3>Монки Yanko</h3>
+                    <p>
+                        Оригинальные туфли монки
+                        в исполнении испанского бренда Yanko.
+                    </p>
+                    <p class="no-margin">
+                        <span class="price">24 500 &#8381;</span>
+                    </p>
+                    <button class="buy">Купить</button>
+                </div>
+                <div class="yanko">
+                    <img src="img/image-21.png" alt="Монки Yanko" width="233" height="180" />
+                    <h3>Монки Yanko</h3>
+                    <p>
+                        Элегантные туфли монки Yanko выполнены из гладкой телячьей кожи.
+                    </p>
+                    <p class="no-margin">
+                        <span class="old-price">23 000 &#8381;</span>
+                        <span>&nbsp;</span>
+                        <span class="new-price">18 400 &#8381;</span>
+                    </p>
+                    <button class="buy">Купить</button>
+                </div>
+            </section>
+            <div class="catalog">
+                <button>Перейти в каталог</button>
+            </div>
+        </main>  
+        <footer>
+            <div class="icons">
+                <img src="img/Vector.png" alt="Facebook" width="10.23" height="22" />
+                <img src="img/Group.png" alt="Instagram" id="instagram" width="25" height="25" />
+                <img src="img/Vector3.png" alt="Vk" width="26.67" height="15" />
+            </div>
+            <div class="contacts">
+                <p>Москва, ул. Большая Бронная, д. 23</p>
+                <p>+7 (926) 624-50-54</p>
+            </div>
+            <div class="contacts">
+                <p>Санкт-Петербург, ул. Марата, д. 36</p>
+                <p>+7 (812) 945-72-21</p>
+            </div>
+            <div class="site">
+                <p>
+                    Вы получили это письмо, потому что подписались на рассылку на сайте <a href="checkroom.ru">checkroom.ru</a>
+                </p>
+            </div>
+            <div class="link">
+                <a href="#">Веб-версия</a>
+                <a href="#">Отписаться</a>
+            </div>
+        </footer>
+    </div>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-image: url("img/image-61.png");
+    width: 100%;
+    height: 823px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 27px;
+}
+
+#carmina {
+    margin-top: 168.43px;
+}
+
+h1 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.detail {
+    border: 1px solid #FFFFFF;
+    width: 194px;
+    height: 50px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 21px;
+}
+
+.content {
+    width:calc(100% - 60px);
+    margin: 41px auto 40px auto;
+}
+
+.content p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #242322;
+    text-transform: uppercase;
+}
+
+.monks {
+    display: flex;
+}
+
+.yanko {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #242322;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.yanko p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #5A5A5A;
+    margin-bottom: 18px;
+}
+
+.monks .yanko .no-margin {
+    margin: 0;
+}
+
+.monks > .yanko > p {
+    padding: 0 32px;
+}
+
+.price {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #242322;
+}
+
+.old-price {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #939393;
+}
+
+.new-price {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #AE0E24;
+}
+
+.buy {
+    width: 128px;
+    height: 35px;
+    border: 1px solid rgba(50, 18, 13, 0.3);
+    background-color: transparent;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #32120D;
+    margin-top: 20px;
+}
+
+.catalog button {
+    width: 276px;
+    height: 50px;
+    background: #32120D;
+    border: 1px solid #32120D;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+div.catalog {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    border-top: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#instagram {
+    margin-left: 39px;
+    margin-right: 32.5px;
+}
+
+.contacts {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #32120D;
+}
+
+.site, .site a {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #BEB1AE;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 208px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+    
+.link a {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #BEB1AE; 
+}
+
+@media screen and (max-width: 375px) {
+    .page {
+        max-width: 375px;
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        background-position: center;
+    }
+    
+    #carmina {
+        margin-top: 209px;
+    }
+    
+    .content {
+        width:calc(100% - 30px);
+    }
+
+    h2 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .monks {
+        flex-direction: column;
+    }
+    
+    .monks > .yanko {
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        display: none;
+    }
+    
+    .monks > .yanko > p {
+        padding: 0;
+    }
+}
+    </style>
+</body>
+</html>
