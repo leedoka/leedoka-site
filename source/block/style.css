@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+section.block {
+    max-width: 1140px;
+    margin: 0;
+    padding: 50px 24px 50px 50px;
+    font-family: Roboto, sans-serif;
+    color: #131718;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+section header {
+    margin: 0;
+    font-size: 18px;
+}
+
+section header p {
+    margin-top: 0;
+}
+
+section header ul.filing-an-appeal {
+    list-style: none;
+}
+
+.filing-an-appeal li {
+    position: relative;
+}
+
+.filing-an-appeal li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #EC1630;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+
+section main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-right: 30px;
+}
+
+section main .container {
+    margin-bottom: 25px;
+}
+
+section main .download {
+    max-width: 229px;
+}
+
+section main .upload, section main .payment {
+    max-width: 274px;
+}
+
+section main .container .forms {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section main .container .instruction {
+    text-align: center;
+    min-height: 82px;
+    padding-bottom: 23px;
+}
+
+section main .container .instruction p {
+    padding: 0;
+}
+
+section main .container .instruction span {
+    display: block;
+    text-transform: uppercase;
+}
+
+section main .container .instruction:not(span) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section main .container .forms .form {
+    width: 80px;
+    height: 100px;
+    border: 5px solid #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #EC1630;
+    font-size: 12px;
+    text-decoration: underline;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section main .container .forms .form a {
+    cursor: pointer;
+}
+
+section main .container .forms {
+    display: flex;
+    margin-left: 10px;
+}
+
+section main .container .forms-pdf {
+    justify-content: space-between;
+}
+
+section main .container .forms-loading {
+    justify-content: space-evenly;
+}
+
+section main .container .forms .form a {
+    margin-bottom: 10px;
+}
+
+section main .container .forms .pdf::after {
+    content: '';
+    width: 34px;
+    height: 34px;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    background-image: url("img/download.png");
+    background-color: #EC1630;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: -20px;
+    left: 55px;
+}
+
+section main .container .forms-loading .form {
+    background-image: url("img/two.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section main .container .forms-loading .form input, section main .container .forms-loading .form.has-file input {
+    display: none;
+}
+
+section main .container .forms-loading .form label {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-image: url("img/plus.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: #EC1630;
+    position: absolute;
+    top: -20px;
+    left: 55px;
+}
+
+section main .container .forms-loading .form.has-file {
+    background-image: url("img/ready.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section main .container .forms-loading .form.has-file label {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-image: url("img/pencil.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: #EC1630;
+    position: absolute;
+    top: -20px;
+    left: 55px;
+}
+
+section main .container .pdf:first-child {
+    background-image: url("img/pdf1.png");
+    background-repeat: no-repeat;
+    background-position: top 5px left 5px;
+}
+
+section main .container .pdf:last-child {
+    background-image: url("img/pdf2.png");
+    background-repeat: no-repeat;
+    background-position: top 5px left 5px;
+}
+
+section main .payment .instruction .price {
+    font-size: 12px;
+    color: #EC1630;
+}
+
+section main .payment button {
+    width: 245px;
+    height: 36px;
+    background-color: #EC1630;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+section footer {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #EEEEEE;
+    border: 1px solid #EC1630;
+    font-size: 12px;
+    padding: 10px;
+}
+
+section footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    section main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.block {
+        padding: 10px;
+    }
+
+    section main {
+        padding: 0;
+    }
+}
