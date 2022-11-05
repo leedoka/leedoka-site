@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Доставка топлива</title>
+</head>
+
+<body>
+
+  <section class="page_container">
+
+    <header class="site_header">
+
+      <div class="pre_header flex container">
+        <div class="pre_header_logo">
+          <a href="#"><img src="img/logo.png" alt="Логотип Процессинг 24"></a>
+        </div>
+        <div class="flex">
+          <div class="pre_header_contacts">
+            <img class="icon_phone hidden" src="img/phone.png" alt="Иконка телефона">
+            <span class="phone_number">8 (495) 127-82-80</span>
+          </div>
+          <div class="pre_header_btns">
+            <button class="btn contact_us" id="btn_contact_us">Напишите нам</button>
+            <button class="btn btn_user" id="btn_user">
+              <img class="hidden" src="img/user.png" alt="Иконка пользователя">
+              Личный кабинет
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <nav class="header_categories container">
+          <ul class="header_categories_list">
+            <li class="header_categories_item">
+              <a class="header_categories_item_text">Доставка топлива</a>
+            </li>
+            <li class="header_categories_item dropdown">
+              <a class="header_categories_item_text">Топливные карты</a>
+              <img src="img/to_down.png" alt="Стрелка вниз">
+            </li>
+            <li class="header_categories_item dropdown">
+              <a class="header_categories_item_text">АЗС</a>
+              <img src="img/to_down.png" alt="Стрелка вниз">
+            </li>
+            <li class="header_categories_item">
+              <a class="header_categories_item_text">Цены на топливо</a>
+            </li>
+            <li class="header_categories_item dropdown">
+              <a class="header_categories_item_text">О компании</a>
+              <img src="img/to_down.png" alt="Стрелка вниз">
+            </li>
+            <li class="header_categories_item">
+              <a class="header_categories_item_text">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+    </header>
+
+      <main class="main">
+
+        <div class="order_container container">
+          <h1 class="headline">Доставка топлива</h1>
+          <div class="quick_order">
+            <h2 class="subtitle">Быстрый <span class="blue">заказ топлива</span></h2>
+            <div class="forms_for_quick_order">
+              <div class="input">
+                <label class="form_label" for="user_name">Ваше имя</label>
+                <input class="form" type="text" id="user_name" placeholder="Иван">
+              </div>
+              <div class="input">
+                <label class="form_label" for="user_phone_number">Номер телефона</label>
+                <input class="form" type="text" id="user_phone_number" placeholder="+7 (___) ___-__-__">
+              </div>
+              <button class="btn to_order_fuel" id="btn_to_order_fuel">Заказать топливо</button>
+            </div>
+            <input class="custom_checkbox" type="checkbox" id="agreement" name="agreement" checked>
+            <label class="label_for_agreement" for="agreement">Я согласен с условиями обработки данных</label>
+          </div>
+        </div>
+
+        <div class="fuel_cost_container container">
+          <h2 class="subtitle">Стоимость топлива</h2>
+          <table class="table_fuel_cost table_fuel_cost_caption">
+              <tr class="table_row table_caption_row">
+                <td class="table_caption_cell">Сорт <span class="hidden">топлива</span></td>
+                <td class="table_caption_cell"><span class="hidden">Экологический </span>класс</td>
+                <td class="table_caption_cell">Производитель</td>
+                <td class="table_caption_cell">Наличный <span class="hidden">расчет</span></td>
+                <td class="table_caption_cell">Безналичный <span class="hidden">расчет</span></td>
+              </tr>
+          </table>
+          <table class="table_fuel_cost">
+            <tr class="table_row">
+              <td class="table_cell blue_rowspan" rowspan="5">ДТ</td>
+              <td class="table_cell" rowspan="3">ЕВРО-5</td>
+              <td class="table_cell">Газпромнефть</td>
+              <td class="table_cell">45.43 р.</td>
+              <td class="table_cell">44.43 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Лукойл</td>
+              <td class="table_cell">45.16 р.</td>
+              <td class="table_cell">43.98 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Роснефть</td>
+              <td class="table_cell">42.34 р.</td>
+              <td class="table_cell">41.64 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell" rowspan="2">ЕВРО-4</td>
+              <td class="table_cell">Газпромнефть</td>
+              <td class="table_cell">-</td>
+              <td class="table_cell">-</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Лукойл</td>
+              <td class="table_cell">41.16 р.</td>
+              <td class="table_cell">40.67 р.</td>
+            </tr>
+          </table>
+          <table class="table_fuel_cost">
+            <tr class="table_row">
+              <td class="table_cell blue_rowspan" rowspan="8">АИ-95</td>
+              <td class="table_cell" rowspan="3">ЕВРО-5</td>
+              <td class="table_cell">Газпромнефть</td>
+              <td class="table_cell">45.43 р.</td>
+              <td class="table_cell">44.43 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Роснефть</td>
+              <td class="table_cell">42.34 р.</td>
+              <td class="table_cell">41.64 р.</td>
+              </tr>
+            <tr class="table_row">
+              <td class="table_cell">Лукойл</td>
+              <td class="table_cell">45.16 р.</td>
+              <td class="table_cell">43.98 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell" rowspan="2">ЕВРО-4</td>
+              <td class="table_cell">Лукойл</td>
+              <td class="table_cell">41.16 р.</td>
+              <td class="table_cell">40.67 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Газпромнефть</td>
+              <td class="table_cell">-</td>
+              <td class="table_cell">-</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell" rowspan="3">ЕВРО-3</td>
+              <td class="table_cell">Роснефть</td>
+              <td class="table_cell">42.34 р.</td>
+              <td class="table_cell">41.64 р.</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Газпромнефть</td>
+              <td class="table_cell">-</td>
+              <td class="table_cell">-</td>
+            </tr>
+            <tr class="table_row">
+              <td class="table_cell">Лукойл</td>
+              <td class="table_cell">45.16 р.</td>
+              <td class="table_cell">43.98 р.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="fuel_delivery_container container">
+          <h2 class="subtitle">Топливо с доставкой</h2>
+          <div class="order_and_total_price">
+            <div class="order_forms">
+              <div class="grid_form">
+                <label class="form_label label" for="type_of_fuel">Вид топлива</label>
+                <select class="form order_form" name="type_of_fuel" id="type_of_fuel">
+                  <option value="ДТ">ДТ</option>
+                  <option value="АИ-95">АИ-95</option>
+                </select>
+              </div>
+              <div class="grid_form">
+                <label class="form_label label" for="fuel_volume">Объем топлива</label>
+                <input class="form order_form form_number" type="text" name="fuel_volume" id="fuel_volume" placeholder="1670 литров">
+                <input class="form order_form form_range hidden" type="range" id="fuel_volume_range" min="0" max="5000" step="1" value="1670">
+              </div>
+              <div class="grid_form">
+                <label class="form_label label" for="place_of_delivery">Место доставки</label>
+                <input class="form order_form" type="text" name="place_of_delivery" id="place_of_delivery" placeholder="Укажите место">
+              </div>
+              <div class="grid_form">
+                <label class="form_label label" for="your_name">Ваше имя</label>
+                <input class="form order_form" type="text" name="your_name" id="your_name" placeholder="Иван">
+              </div>
+              <div class="grid_form">
+                <label class="form_label label" for="your_phone_number">Номер телефона</label>
+                <input class="form order_form" type="tel" name="your_phone_number" id="your_phone_number" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="total_card">
+              <h3>Итого</h3>
+              <div class="total_price flex">
+                <span class="price_name">Стоимость <span class="hidden">топлива</span></span>
+                <span class="price" id="fuel_total_price">77 350.00 ₽</span>
+              </div>
+              <div class="total_price flex">
+                <span class="price_name">Цена за литр:<br>
+                  <span class="desc">
+                    Цена и стоимость указаны ориентировочно.<br>
+                    Точные цену и стоимость собщит наш менеджер при<br>
+                    подтверждении заявки.
+                  </span>
+                </span>
+                <span class="price">45.50 ₽</span>
+              </div>
+              <div class="total_price flex">
+                <span class="price_name">Выгода:<br>
+                  <span class="desc">
+                    При цене на АЗС  49.59 ₽  за литр, цены актуальны на<br>
+                    23.11.2020 г.
+                  </span>
+                </span>
+                <span class="strong_price" id="fuel_discount">6 953.00 ₽</span>
+              </div>
+              <button class="btn to_order_fuel" id="to_order_fuel_btn">Заказать топливо</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="working_process_container container">
+          <h2 class="subtitle">Как мы работаем</h2>
+          <div class="working_process_cards flex">
+            <div class="working_process_card grow first_step_card">
+              <p class="time">1-3 мин.</p>
+              <h4 class="card_caption">Оформление заявки</h4>
+              <p class="working_process_text">Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+            </div>
+            <div class="working_process_card grow second_step_card">
+              <p class="time">1-3 мин.</p>
+              <h4 class="card_caption">Подтверждение заявки менеджером</h4>
+              <p class="working_process_text">Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+            </div>
+            <div class="working_process_card grow last_step_card">
+              <p class="time">30-90 мин.</p>
+              <h4 class="card_caption">Заправка вашего автомобиля</h4>
+              <p class="working_process_text">В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+              <p class="working_process_note">Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits_container container">
+          <h2 class="subtitle">Преимущества сервиса</h2>
+          <div class="benefits_cards flex">
+            <div class="benefit_card grow first_benefit">
+              <h5 class="benefit_caption">Качество топлива</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+            <div class="benefit_card grow second_benefit">
+              <h5 class="benefit_caption">Бережем ваше время и нервы</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+            <div class="benefit_card grow third_benefit">
+              <h5 class="benefit_caption">Цена</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+            <div class="benefit_card grow fourth_benefit">
+              <h5 class="benefit_caption">Ваш комфорт—наша забота</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+            <div class="benefit_card grow fifth_benefit">
+              <h5 class="benefit_caption">Безопасность процесса</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+            <div class="benefit_card grow last_benefit">
+              <h5 class="benefit_caption">Несколько ТС в одном месте?</h5>
+              <p class="benefit_text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificates_container container">
+          <div class="flex flex_arrows">
+            <h2 class="subtitle">Сертификаты качества<span class="hidden"> топлива</span></h2>
+            <div class="arrows">
+              <button class="arrow_btn" id="arrow_left_btn"><img src="img/arrow_left.png" alt="Стрелка влево"></button>
+              <button class="arrow_btn" id="arrow_right_btn"><img src="img/arrow_right.png" alt="Стрелка вправо"></button>
+            </div>
+          </div>
+          <div class="certificates flex">
+            <div class="certificate first_certificate grow">
+              <img src="img/certificate_1.png" alt="Сертификат соответствия">
+            </div>
+            <div class="certificate second_certificate grow">
+              <img src="img/certificate_2.png" alt="Сертификат соответствия">
+            </div>
+            <div class="certificate third_sertificate grow">
+              <img src="img/certificate_3.png" alt="Сертификат соответствия">
+            </div>
+            <div class="certificate last_certificate grow">
+              <img src="img/certificate_4.png" alt="Сертификат соответствия">
+            </div>
+          </div>
+        </div>
+
+        <div class="our_partners_container container">
+          <h2 class="subtitle">Наши партнеры</h2>
+          <div class="partners flex">
+            <div class="partner grow">
+              <img src="img/LUK_OIL_Logo.png" alt="Лукойл">
+            </div>
+            <div class="partner grow">
+              <img src="img/gazprom.png" alt="Газпром">
+            </div>
+            <div class="partner grow">
+              <img src="img/Rosneft_Logo.png" alt="Роснефть">
+            </div>
+            <div class="partner grow">
+              <img src="img/Tatneft-Logo.png" alt="Татнефть">
+            </div>
+          </div>
+          <div class="dots hidden">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="reviews_container container">
+          <div class="flex flex_arrows">
+            <h2 class="subtitle">Отзывы</h2>
+            <div class="arrows">
+              <button class="arrow_btn" id="btn_arrow_left"><img src="img/arrow_left.png" alt="Стрелка влево"></button>
+              <button class="arrow_btn" id="btn_arrow_right"><img src="img/arrow_right.png" alt="Стрелка вправо"></button>
+            </div>
+          </div>
+          <div class="reviews_cards flex">
+            <div class="review_card first_review_card">
+              <p class="author">Гусев Вячеслав</p>
+              <p class="place_of_work">Индивидуальный предприниматель</p>
+              <blockquote class="quote">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</blockquote>
+              <div class="more">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="review_card last_review_card">
+              <p class="author">Зеленов Евгений</p>
+              <p class="place_of_work">Гененеральный директор трансопртной компании</p>
+              <blockquote class="quote">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</blockquote>
+              <div class="more">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="read_all_reviews">
+            <button class="btn all_reviews_btn" id="all_reviews_btn">Читать все отзывы</button>
+          </div>
+        </div>
+
+        <div class="questions_container container">
+          <h2 class="subtitle questions_caption">Остались вопросы?</h2>
+          <p class="questions_text hidden">Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона, и мы<br>
+            свяжемся с Вами в ближайшее время</p>
+          <div class="feedback_forms flex">
+            <input class="feedback_form form" type="text" placeholder="Ваше имя">
+            <input class="feedback_form form" type="tel" placeholder="Номер телефона">
+            <div class="call_me_div">
+              <button class="btn call_me" id="btn_call_me">Перезвоните мне</button>
+            </div>
+          </div>
+          <p class="questions_text_note"><span class="hidden">Нажимая на кнопку "Перезвоните мне", </span>я соглашаюсь с <a class="questions_link" href="#">политикой конфиденциальности</a></p>
+        </div>
+      </main>
+
+      <footer>
+        <div class="page_footer container flex">
+          <div class="footer_logo_and_copyright">
+            <a href="#"><img src="img/logo.png" alt="Логотип Процессинг 24"></a>
+            <p class="copyright hidden">&#169; 2019 ООО "Процессинг 24"</p>
+          </div>
+          <div class="footer_categories flex">
+            <ul class="footer_menu">
+              <li><a class="footer_link" href="#">Карта АЭС</a></li>
+              <li><a class="footer_link" href="#">АЭС по регионам</a></li>
+              <li><a class="footer_link" href="#">АЭС по брендам</a></li>
+              <li><a class="footer_link" href="#">Доставка топлива</a></li>
+            </ul>
+            <ul class="footer_menu">
+              <li><a class="footer_link" href="#">Контакты</a></li>
+              <li><a class="footer_link" href="#">О компании</a></li>
+              <li><a class="footer_link" href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="sales_department"><strong>Отдел продаж</strong></p>
+            <p class="footer_phone_number blue"><strong>8 (495) 121-81-70</strong></p>
+          </div>
+        </div>
+      </footer>
+
+      <aside>
+        <div class="post_footer container">
+          <p class="post_footer_text"><a class="post_footer_link" href="#">Политика конфиденциальности</a></p>
+        </div>
+      </aside>
+    </section>
+  </body>
+  <script src="./script.js" defer></script>
+</html>
