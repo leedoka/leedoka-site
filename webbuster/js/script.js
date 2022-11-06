@@ -28,7 +28,7 @@ $(document).ready(function () {
         var formNm = $('#' + formID);
         $.ajax({
             type: "POST",
-            url: 'mail.php',
+            url: 'deliver_order_data.php',
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки
