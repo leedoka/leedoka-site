@@ -89,13 +89,14 @@
 
     <div class="remodal invisible" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
         <button class="remodal__close" id="remodal__close" data-remodal-action="close" aria-label="Close"></button>
-        <form class="modal__form" id="form">
+        <form class="modal__form" id="form" action="deliver_order_data.php" method="post">
           <h3 class="subtitle" id="modal1Title">Оставьте ваши контактные данные, и наш консультант свяжется с вами</h3>
           <input class="put__name" type="text" name="name" placeholder="Ваше имя" required>
           <!-- <input class="put__phone" type="tel" name="phone" placeholder="Номер телефона" required> -->
           <input class="put__phone" type="tel" name="phone" pattern="[1-9]{1}[0-9]{9}" title="Укажите 10 цифр телефона" placeholder="Номер телефона" required>
           <input class="put__phone" type="text" name="product" id="product-name" placeholder="Название товара" required>
-          <input class="btn btn__submit" type="submit" name="submit" value="Отправить">
+          <!-- <input class="btn btn__submit" type="submit" name="submit" value="Отправить"> -->
+          <button class="btn btn__submit" name="submit" type="submit">Отправить</button>
           <input class="hidden" type="hidden" name="form__data" value="Заявка с сайта">
         </form>
     </div>
